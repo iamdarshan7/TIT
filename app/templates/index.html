@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block title %}
-    Unassist | index
+Unassist | index
 {% endblock title %}
 
 {% block content %}
@@ -42,98 +43,47 @@
 				<!-- main nav -->
 				<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarLeft">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home<i class="fa fa-chevron-down"></i></a>
+						<li class="active"><a href="#">Home</a>
+						<li><a href="#">How to Apply <i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="index.html" class="dez-page">Home 1</a></li>
-								<li><a href="index-2.html" class="dez-page">Home 2</a></li>
-								<li><a href="index-3.html" class="dez-page">Home 3</a></li>
-								<li><a href="index-4.html" class="dez-page">Home 4</a></li>
+								<li><a href="#" class="dez-page">Things to do </a></li>
 							</ul>
 						</li>
-						<li><a href="#">Pages <i class="fa fa-chevron-down"></i></a>
-							<ul class="sub-menu">
-								<li><a href="#">About Us <i class="fa fa-angle-right"></i></a>
-									<ul class="sub-menu">
-										<li><a href="about-1.html" class="dez-page">About Us 1</a></li>
-										<li><a href="about-2.html" class="dez-page">About Us 2</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Our Team <i class="fa fa-angle-right"></i></a>
-									<ul class="sub-menu">
-										<li><a href="team-1.html" class="dez-page">Our Team 1</a></li>
-										<li><a href="team-2.html" class="dez-page">Our Team 2</a></li>
-									</ul>
-								</li>
-								<li><a href="mission-and-vission.html" class="dez-page">Mission & Vission</a></li>
-								<li><a href="management.html" class="dez-page">Management</a></li>
-								<li><a href="our-history.html" class="dez-page">Our history</a></li>
-								<li><a href="testimonial.html" class="dez-page">Testimonial</a></li>
-								<li><a href="error-404.html" class="dez-page">Error 404</a></li>
-								<li><a href="faq.html" class="dez-page">FAQ's</a></li>
-							</ul>
 						</li>
-						<li><a href="#">Services <i class="fa fa-chevron-down"></i></a>
+						<li><a href="#">Schooling <i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a class="dez-page" href="service-financial-planning.html">Financial Planning </a>
+								<li><a class="dez-page" href="#">Universities </a>
 								</li>
-								<li><a class="dez-page" href="service-software-and-research.html">Software &
-										Research</a></li>
-								<li><a class="dez-page" href="service-business-services.html">Business Services </a>
+								<li><a class="dez-page" href="#">Colleges </a></li>
+								<li><a class="dez-page" href="#">Schools </a>
 								</li>
-								<li><a class="dez-page" href="service-quality-resourcing.html">Quality Resourcing </a>
+								<li><a class="dez-page" href="#">Tution Centers </a>
 								</li>
-								<li><a class="dez-page" href="service-travel-and-aviation.html">Travel and Aviation</a>
+								<li><a class="dez-page" href="#">Training Centers</a>
 								</li>
-								<li><a class="dez-page" href="service-healthcare-services.html">Healthcare Services</a>
+								<li><a class="dez-page" href="#">Montessori</a>
 								</li>
 							</ul>
 						</li>
-						<li><a href="#">Blog <i class="fa fa-chevron-down"></i></a>
+						<li><a href="#">Study Abroad <i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="blog-grid-2.html" class="dez-page">Blog Grid 2</a></li>
-								<li><a href="blog-grid-2-sidebar.html" class="dez-page">Blog Grid 2 Sidebar</a></li>
-								<li><a href="blog-grid-3.html" class="dez-page">Blog Grid 3</a></li>
-								<li><a href="blog-grid-3-sidebar.html" class="dez-page">Blog Grid 3 Sidebar</a></li>
-								<li><a href="blog-grid-4.html" class="dez-page">Blog Grid-4</a></li>
-								<li><a href="blog-half-img-sidebar.html" class="dez-page">Blog Half Img Sidebar</a></li>
-								<li><a href="blog-large-img-sidebar.html" class="dez-page">Blog Large Img Sidebar</a>
-								</li>
-								<li><a href="blog-single.html" class="dez-page">Blog Single</a></li>
-								<li><a href="blog-single-sidebar.html" class="dez-page">Blog Single Sidebar</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Our Portfolio <i class="fa fa-chevron-down"></i></a>
-							<ul class="sub-menu">
-								<li><a href="portfolio-grid-2.html" class="dez-page">Portfolio Grid 2 </a></li>
-								<li><a href="portfolio-grid-3.html" class="dez-page">Portfolio Grid 3 </a></li>
-								<li><a href="portfolio-grid-4.html" class="dez-page">Portfolio Grid 4 </a></li>
-								<li><a href="portfolio-full-width.html" class="dez-page">Portfolio Full Width </a></li>
-								<li><a href="portfolio-details.html" class="dez-page">Portfolio Details</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Feature <i class="fa fa-chevron-down"></i></a>
-							<ul class="sub-menu">
-								<li><a href="#">Header <i class="fa fa-angle-right"></i></a>
-									<ul class="sub-menu left">
-										<li><a href="header-1.html" class="dez-page">Header 1</a></li>
-										<li><a href="header-2.html" class="dez-page">Header 2</a></li>
-										<li><a href="header-3.html" class="dez-page">Header 3</a></li>
-										<li><a href="header-4.html" class="dez-page">Header 4</a></li>
-										<li><a href="header-5.html" class="dez-page">Header 5</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Footer <i class="fa fa-angle-right"></i></a>
-									<ul class="sub-menu left">
-										<li><a href="footer-1.html" class="dez-page">Footer 1</a></li>
-										<li><a href="footer-2.html" class="dez-page">Footer 2</a></li>
-										<li><a href="footer-3.html" class="dez-page">Footer 3</a></li>
-										<li><a href="footer-4.html" class="dez-page">Footer 4</a></li>
-										<li><a href="footer-5.html" class="dez-page">Footer 5</a></li>
-									</ul>
+								<li><a href="#" class="dez-page">USA</a></li>
+								<li><a href="#" class="dez-page">CANADA</a></li>
+								<li><a href="#" class="dez-page">AUSTRALIA</a></li>
+								<li><a href="#" class="dez-page">GERMANY</a></li>
+								<li><a href="#" class="dez-page">INDIA</a>
 								</li>
 							</ul>
 						</li>
-						<li><a href="contact.html" class="dez-page">Contact Us</a></li>
+						<li><a href="#">About <i class="fa fa-chevron-down"></i></a>
+							<ul class="sub-menu">
+								<li><a href="#">About Us<i class="fa fa-angle-right"></i></a>
+								<li><a href="#">Our Promises<i class="fa fa-angle-right"></i></a></li>
+								<li><a href="#" class="dez-page">Events</a></li>
+								<li><a href="#" class="dez-page">Announcements</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="dez-page">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -161,8 +111,9 @@
 							data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
 							data-param10="" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="{% static 'images/main-slider/slide6.jpg' %}" alt="" data-bgposition="center center"
-								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+							<img src="{% static 'images/main-slider/slide6.jpg' %}" alt=""
+								data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+								class="rev-slidebg" data-no-retina>
 							<div class="tp-caption tp-shape tp-shapewrapper tp-overlay" id="slide-100-layer-5"
 								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
@@ -181,7 +132,7 @@
 								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
 								style="z-index: 6; white-space: nowrap; font-size: 20px; line-height: 62px; font-weight: 700; color: #fff; letter-spacing: 0px;font-family:Montserrat;text-transform:uppercase;">
-								#1 best agency Theme
+								#1 doorway to education
 							</div>
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption tp-resizeme d-lg-block d-none" id="slide-100-layer-2" data-x="550"
@@ -221,8 +172,9 @@
 							data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
 							data-param10="" data-description="">
 							<!-- MAIN IMAGE -->
-							<img src="{% static 'images/main-slider/slide5.jpg' %}" alt="" data-bgposition="center center"
-								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+							<img src="{% static 'images/main-slider/slide5.jpg' %}" alt=""
+								data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+								class="rev-slidebg" data-no-retina>
 
 							<div class="tp-caption tp-shape tp-shapewrapper tp-overlay" id="slide-200-layer-5"
 								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -326,13 +278,13 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- Our Awesome Services End -->
 			<div class="section-full medi-client">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-6 col-md-12 col-sm-12 p-a0 overlay-primary-dark  d-flex text-center"
-							style="background-image:url(images/about/pic3.jpg);">
+							style="background-image:url({% static 'images/about/pic3.jpg' %});">
 							<div class="max-w500 m-auto relative z-index2 text-white p-tb50 align-self-center">
 								<h2 class="text-white m-b10">The Real Experience</h2>
 								<h6 class="fw3 m-b30">Branches all over World</h6>
@@ -341,7 +293,8 @@
 									<div class="item">
 										<div class="testimonial">
 											<div class="testimonial-pic radius shadow"><img
-													src="{% static 'images/testimonials/pic2.jpg' %}" alt="" width="100" height="100">
+													src="{% static 'images/testimonials/pic2.jpg' %}" alt="" width="100"
+													height="100">
 											</div>
 											<div class="testimonial-text">
 												<p>It is a long established fact that a reader will be distracted by the
@@ -358,7 +311,8 @@
 									<div class="item">
 										<div class="testimonial">
 											<div class="testimonial-pic radius shadow"><img
-													src="{% static 'images/testimonials/pic3.jpg' %}" alt="" width="100" height="100">
+													src="{% static 'images/testimonials/pic3.jpg' %}" alt="" width="100"
+													height="100">
 											</div>
 											<div class="testimonial-text">
 												<p>It is a long established fact that a reader will be distracted by the
@@ -375,7 +329,8 @@
 									<div class="item">
 										<div class="testimonial">
 											<div class="testimonial-pic radius shadow"><img
-													src="{% static 'images/testimonials/pic1.jpg' %}" alt="" width="100" height="100">
+													src="{% static 'images/testimonials/pic1.jpg' %}" alt="" width="100"
+													height="100">
 											</div>
 											<div class="testimonial-text">
 												<p>It is a long established fact that a reader will be distracted by the
@@ -394,35 +349,113 @@
 								<h6>John McHill – <span class="fw3">Customer</span></h6>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12 bg-gray p-lr0 p-tb50 d-flex" style="background-image:url(images/pattern/pt1.jpg);">
-							<div class="bg-white p-a30 p-t40 form-tax align-self-center wow fadeInRight" data-wow-delay="0.5s">
-								<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 bg-gray p-lr0 p-tb50 d-flex"
+							style="background-image:url({% static 'images/pattern/pt1.jpg' %});">
+							<div class="bg-white p-a30 p-t40 form-tax align-self-center wow fadeInRight"
+								data-wow-delay="0.5s">
+								<form id="p-form">
+									<div class="text-center">
+										<h2>APPLY HERE</h2>
+									</div>
+									{% csrf_token %}
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Name</label>
+												<div class="input-group">
+													{{form.name}}
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Email</label>
+												<div class="input-group">
+													{{form.email}}
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Phone</label>
+												<div class="input-group">
+													{{form.phone}}
+												</div>
+												<small>{{form.phone.errors|striptags}}</small>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
+												<label>Program</label>
+												<select class="form-control">
+													<option>Select Here</option>
+													<option>primary level</option>
+													<option>secondary level</option>
+													<option>+2</option>
+													<option>Bachelor</option>
+													<option>Master</option>
+												</select>
+										</div>
+										<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+											<button name="submit" type="submit" value="Submit"
+												class="site-button outline outline-2 radius-xl button-md"><span>Next </span></button>
+										</div>
+									</div>
+
+
+								</form>
+								<div class="mt-3 p-3">
+									<div id="alert-box"></div>
+								</div>
+								<!-- <form id="p-form">
+									<h2>APPLY HERE</h2>
+									{% csrf_token %}
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Name</label>
+												<input type="text" class="form-group" id="id_name" placeholder="Your name">
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Email</label>
+												<input type="email" class="form-group" id="id_email"
+													placeholder="Your email">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+											<div class="form-group">
+												<label>Phone</label>
+												<input type="" class="form-group" id="id_phone" placeholder="Your number">
+											</div>
+										</div>
+
+										<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mb-4 ">
+											<div class="align-self-end btn-block">
+												<button type="submit" class="site-button btn-block">Submit</button>
+											</div>
+										</div>
+
+									</div>
+								</form> -->
+
+								<!-- <div class="row">
 									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
 										<div class="form-group">
 											<label>Name</label>
-											<select class="form-control">
-												<option>Select Your Business</option>
-												<option>Marketing</option>
-												<option>IT Industries</option>
-												<option>Management Industries</option>
-												<option>Property Business</option>
-											</select>
+											<input type="text" class="form-control" placeholder="Your Name">
 										</div>
 									</div>
 									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
 										<div class="form-group">
 											<label>Email</label>
-											<select class="form-control">
-												<option>Australia</option>
-												<option>United State</option>
-												<option>United Kingdom</option>
-												<option>Germany</option>
-												<option>Netherland</option>
-											</select>
+											<input type="email" class="form-control" placeholder="Your Email">
 										</div>
 									</div>
-								</div>
-								<div class="row">
+								</div> -->
+								<!-- <div class="row">
 									<div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-12 mb-4">
 										<div class="form-group">
 											<label>Program</label>
@@ -460,21 +493,21 @@
 											</select>
 										</div>
 									</div>
-								</div>
-								<div class="row">
+								</div> -->
+								<!-- <div class="row">
 									<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 mb-4 d-flex">
 										<div class="calculate align-self-end btn-block">
-											<button class="site-button btn-block" type="button">Calculate</button>
+											<button class="site-button btn-block" type="button">Click</button>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="section-full content-inner bg-primary bg-img-fix overlay-primary-dark"
-				style="background-image:url(images/background/bg1.jpg);">
+				style="background-image:url({% static 'images/background/bg1.jpg' %});">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center section-head">
@@ -522,7 +555,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 		<!-- contact area END -->
 	</div>
@@ -596,7 +629,7 @@
 								<li class="img-effect2"> <a href="javascript:void(0);"><img
 											src="{% static 'images/gallery/pic2.jpg' %}" alt=""></a> </li>
 								<li class="img-effect2"> <a href="javascript:void(0);"><img
-											src="{% static 'assets/images/gallery/pic3.jpg' %}" alt=""></a> </li>
+											src="{% static 'images/gallery/pic3.jpg' %}" alt=""></a> </li>
 							</ul>
 						</div>
 					</div>
