@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from .forms import FormDatas
-
+from .models import FacultyData, PercentageData
 # Create your views here.
 
 # def hello(request):
@@ -47,19 +47,28 @@ from .forms import FormDatas
 
 def add_data(request):
     if request.method == "POST":
-        form = FormDatas(request.POST)
+        form = FormDatas(request.POST or None)
         data = {}
         if request.is_ajax():
             if form.is_valid():
                 form.save()
-                data['email'] = form.cleaned_data.get('email')
-                data['status'] = 'ok'
+                data['status'] = 'ok! success'
                 return JsonResponse(data)
                 form = FormDatas()
     else:
         form = FormDatas()
 
     context = {
-        'form': form
+        'form': form,
     }
     return render(request, 'index.html', context)
+
+
+# def get_program_data(request):
+#     qs_val = list(FacultyData.objects.values())
+#     return JsonResponse({"data": qs_val})
+
+# def get_percentage_data(request):
+#     qs_val = list(PercentageData.objects.values())
+#     return JsonResponse({"data": qs_val})
+
