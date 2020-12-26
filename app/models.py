@@ -26,3 +26,37 @@ class Data(models.Model):
     def __str__(self):
         return self.name
 
+# class Location(models.Model):
+#     name = models.CharField(max_length=100)
+
+#     def __str__(self):
+#         return 'Location is - {}'.format(self.name)
+
+# class Stream(models.Model):
+#     name = models.CharField(max_length=100)
+
+#     def __str__(self):
+#         return '{} is subject stream'.format(self.name)
+
+# class College(models.Model):
+#     name = models.CharField(max_length=100)
+#     desc = models.TextField()
+
+#     def __str__(self):
+#         return  '{} ----- college name'.format(self.name)
+
+# class University(models.Model):
+#     name = models.CharField(max_length=100)
+#     desc = models.TextField()
+
+#     def __str__(self):
+#         return  '{} ----- university name'.format(self.name)
+
+# class AnotherData(models.Model):
+#     location = models.ForeignKey(Location, on_delete=models.CASCADE)
+#     stream = models.ForeignKey(Stream, on_delete=models.CASCADE)
+#     college = models.ForeignKey(College, on_delete=models.CASCADE)
+#     university = models.ForeignKey(University, on_delete=models.CASCADE)
+
+#     def __str__(self):
+#         return '{} - loaction {} - stream {} - college {} - university '.format(self.location, self.stream, self.college, self.university)

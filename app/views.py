@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from .forms import FormDatas
 from .models import FacultyData, PercentageData
+from django.views.generic import TemplateView
 # Create your views here.
 
 # def hello(request):
@@ -62,6 +63,22 @@ def add_data(request):
         'form': form,
     }
     return render(request, 'index.html', context)
+
+# def add_another_data(request):
+#     if request.method == "POST":
+#         fm = AnotherFormDatas(requeest.POST)
+#         if fm.is_valid():
+#             fm.save()
+#             fm = AnotherFormDatas()
+#     else: 
+#         fm = AnotherFormDatas()
+
+#     return render(request, 'index.html', {'fm': fm})    
+
+
+class Contact(TemplateView):
+    template_name = "contact.html"
+
 
 
 # def get_program_data(request):

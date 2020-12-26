@@ -1,3 +1,4 @@
+
 /**
 Company : Dazzler Software Pvt. Ltd
 File 	: custom.js
@@ -607,3 +608,12 @@ $(window).on("load", function (e) {
 
 
 /*  Window Load END */
+
+let apply_btn =document.getElementById('apply-here')
+
+apply_btn.addEventListener('click', (e) => {
+	e.preventDefault()
+	document.getElementById('p-form').classList.remove('hidden')
+	apply_btn.classList.add('hidden')
+})
+

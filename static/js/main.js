@@ -39,7 +39,7 @@ const handleAlerts = (type, text) => {
 //                 option.setAttribute('class', 'item')  
 //                 option.setAttribute('data-value', item.title)
 //                 program.appendChild(option)
-    
+
 //             })
 //         },
 //         error: function(error){
@@ -64,7 +64,7 @@ const handleAlerts = (type, text) => {
 //                 option.setAttribute('class', 'item') 
 //                 option.setAttribute('data-value', item.title)
 //                 percentage.appendChild(option)
-    
+
 //             })
 //         },
 //         error: function(error){
@@ -81,7 +81,7 @@ const text_Percentage = document.getElementById('id_percentage')
 
 
 // after submitting data
-form.addEventListener('submit',e => {
+form.addEventListener('submit', e => {
     e.preventDefault()
 
     const fd = new FormData()
@@ -91,8 +91,8 @@ form.addEventListener('submit',e => {
     fd.append('phone', phone.value)
     fd.append('program', text_Program.value)
     fd.append('percentage', text_Percentage.value)
-    
-    
+
+
 
     $.ajax({
         url: '',
@@ -107,18 +107,21 @@ form.addEventListener('submit',e => {
             you can apply for further studies.</p>
         </div>`
             handleAlerts('success', sText)
-            setTimeout(() =>{
+            setTimeout(() => {
                 alertBox.innerHTML = ''
-                f_name.value = ''
-                email.value = ''
-                phone.value = ''
-                text_Program.value = ''
-                text_Percentage.value = ''
+                // f_name.value = ''
+                // email.value = ''
+                // phone.value = ''
+                // text_Program.value = '--------'
+                // text_Percentage.value = '------'
 
 
             }, 3000)
-        },
-        error: function (error) {
+            form.classList.add('hidden')
+            document.getElementById('another_form').classList.remove('hidden')
+        
+    },
+        error : function (error) {
             console.log(error)
             handleAlerts('danger', 'oops..something went wrong')
         },
@@ -132,3 +135,6 @@ form.addEventListener('submit',e => {
 
 console.log(form)
 
+
+// document.getElementById('p-form').classList.add('hidden')
+// document.getElementById('another_form').classList.remove('hidden')
