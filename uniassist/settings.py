@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     # Apps we created
     "app",
     'schooling',
+    'abroad',
+    'about',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
