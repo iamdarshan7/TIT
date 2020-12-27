@@ -42,9 +42,9 @@
 </head>
 
 <body>
-    
+        <div class="page-wraper">
         <div class="header-sticky menu-bar-content navbar-expand-lg">
-            <div class="main-bar clearfix ">
+            <div class="main-bar clearfix bg-primary">
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="daz-logo mt-1">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <!-- Quik search -->
-                    <div class="daz-search search-style-2">
+                    <div class="daz-search bg-search">
                         <form action="#">
                             <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
                             <span id="daz-search-remove"><i class="flaticon-cancel"></i></span>
@@ -90,16 +90,16 @@
                             </li>
                             <li><a href="#">Schooling <i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a class="dez-page" href="#">Universities </a>
+                                    <li><a class="dez-page" href="{% url 'universities' %}">Universities </a>
                                     </li>
-                                    <li><a class="dez-page" href="#">Colleges </a></li>
-                                    <li><a class="dez-page" href="#">Schools </a>
+                                    <li><a class="dez-page" href="{% url 'colleges' %}">Colleges </a></li>
+                                    <li><a class="dez-page" href="{% url 'schools' %}">Schools </a>
                                     </li>
-                                    <li><a class="dez-page" href="#">Tution Centers </a>
+                                    <li><a class="dez-page" href="{% url 'tution_centers' %}">Tution Centers </a>
                                     </li>
-                                    <li><a class="dez-page" href="#">Training Centers </a>
+                                    <li><a class="dez-page" href="{% url 'training_centers' %}">Training Centers </a>
                                     </li>
-                                    <li><a class="dez-page" href="#">Montessori </a>
+                                    <li><a class="dez-page" href="{% url 'montessoris' %}">Montessori </a>
                                     </li>
                                 </ul>
                             </li>
@@ -234,6 +234,9 @@
         <button class="scroltop fa fa-chevron-up"></button>
 
 
+
+    {% block script %}    
+    {% endblock script %}    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

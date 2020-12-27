@@ -225,7 +225,7 @@
 }
 .daz-header.header-style-1 .daz-logo,
 .daz-header.header-style-1 .daz-logo img{
-	    max-width: 130px;
+	max-width: 130px;
 }
 @media only screen and (max-width: 991px){
 	.daz-header.header-style-1 .header-nav .nav > li > a, 

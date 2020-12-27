@@ -175,7 +175,7 @@
 	1. GENERAL
 ======================= */
 body, html {
-     -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 body {
     background-color: #fff;
@@ -254,13 +254,13 @@ dd,
 table {
     margin-bottom: 24px;
 }
- ::selection {
-     color: #000;
-     background:#dbdbdb;
+::selection {
+    color: #000;
+    background:#dbdbdb;
 }
- ::-moz-selection {
-     color:#000;
-     background:#dbdbdb;
+::-moz-selection {
+    color:#000;
+    background:#dbdbdb;
 }
 .overflow-hide {
     overflow: hidden;
@@ -279,7 +279,7 @@ table {
     color: #fff;
 }
 ::selection {
-    background: #3396d1;
+    background: #021438;
     color: #fff;
 }
 .op{
@@ -2465,7 +2465,7 @@ blockquote:before {
     }
 	.daz-header .navbar-toggler,
 	.daz-header .is-fixed .navbar-toggler{
-		 margin: 18px 0 14px 10px;
+		margin: 18px 0 14px 10px;
 	}
 	.daz-header .secondary-nav,
 	.daz-header .is-fixed .secondary-nav{
@@ -3001,63 +3001,63 @@ blockquote:before {
 }
 /*====| - Nav_Close_Icon |====*/
 .menuicon{
-  width: 20px;
-  height: 18px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 .menuicon span{
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  border-radius: 1px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 .menuicon span:nth-child(1) {
-  top: 0px;
+    top: 0px;
 }
 
 .menuicon span:nth-child(2) {
-  top: 7px;
+    top: 7px;
 }
 .menuicon span:nth-child(3) {
-  top: 14px;
+    top: 14px;
 }
 .menuicon.open span:nth-child(1) {
-  top: 7px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+    top: 7px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 .menuicon.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
+    opacity: 0;
+    left: -60px;
 }
 .menuicon.open span:nth-child(3) {
-  top: 7px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+    top: 7px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 /*====| - Search_Style |====*/
 .daz-search {
@@ -5906,7 +5906,7 @@ a,
 	.button-layout .site-secondry,
 	.button-layout .site-button,
 	.button-layout .btn {
-		 margin-bottom:10px;
+		margin-bottom:10px;
 	}
 }
 /* Social White */
@@ -7465,11 +7465,11 @@ a,
 .fly-box-ho:hover,
 .fly-box:hover{
 	transition:all 0.5s;
-	 -moz-transition:all 0.5s;
-	 -webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
 }
 .fly-box{
-	 box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); 
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); 
 }
 .icon-bx-wraper:hover .fly-box-ho,
 .fly-box-ho:hover,

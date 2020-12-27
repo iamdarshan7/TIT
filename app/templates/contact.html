@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Unassist | Contact
+{% endblock title %}
+
+{% block content %}
+
+</header>
+<!-- header END -->
+<!-- Content -->
+<div class="page-content bg-white">
+	<!-- inner page banner -->
+	<div class="bnr-inr bg-pt" style="background-image:url(images/banner/bnr1.jpg);">
+		<div class="container">
+			<div class="bnr-inr-entry">
+				<h1>Contact Us</h1>
+				<!-- Breadcrumb row -->
+				<div class="breadcrumb-row">
+					<ul class="list-inline">
+						<li><a href="{% url 'add' %}">Home</a></li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+				<!-- Breadcrumb row END -->
+			</div>
+		</div>
+	</div>
+	<!-- inner page banner END -->
+	<!-- contact area -->
+	<div class="content-block">
+		<div class="section-full content-inner bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 p-a20 center">
+							<div class="icon-xl text-primary m-b20"> <a href="#" class="icon-cell"><i
+										class="ti-location-pin"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="tilte text-uppercase">Address</h5>
+								<p>Itahari - 4 <br> Aitabare</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 p-a20 center">
+							<div class="icon-xl text-primary m-b20"> <a href="#" class="icon-cell"><i
+										class="ti-email"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="tilte text-uppercase">Email</h5>
+								<p>darshanthapa872@gmail.com <br> tyoinfotech@gmail.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper bx-style-1 p-a20 center">
+							<div class="icon-xl text-primary m-b20"> <a href="#" class="icon-cell"><i
+										class="ti-mobile"></i></a> </div>
+							<div class="icon-content">
+								<h5 class="tilte text-uppercase">Phone</h5>
+								<p>9810452566 <br>9810452566</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Info END -->
+		<!-- contact area -->
+		<div class="section-full bg-white">
+			<div class="row m-lr0">
+				<div class="col-lg-12 col-md-12 p-a0">
+					<!-- <iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219"
+						style="border:0; margin-bottom: -5px; height: 400px; width:100%;" allowfullscreen></iframe> -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57045.597117991914!2d87.23472558200294!3d26.669292274874245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6c66e80fbfa9%3A0x38094d1a7c974283!2sItahari!5e0!3m2!1sen!2snp!4v1608996598150!5m2!1sen!2snp" 
+						style="border:0; margin-bottom: -5px; height: 400px; width: 100%;" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- contact area END -->
+		<!-- Content us -->
+		<div class="section-full content-inner bg-white">
+			<div class="container">
+				<div class="section-head text-black text-center">
+					<h3 class="h2 text-uppercase fw7">Contact Us</h3>
+					<div class="separator bg-primary"></div>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+						standard dummy text ever since the been when an unknown printer.</p>
+				</div>
+				<div class="row max-w1000 m-auto">
+					<div class="col-lg-12">
+						<div class="contact-page-6 p-a30 clearfix form-box1">
+							<div class="dazFormMsg"></div>
+							<form method="post" class="dazForm" action="script/contact.php">
+								<input type="hidden" value="Contact" name="dzToDo">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input name="dzName" type="text" required class="form-control"
+													placeholder="Your Name">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input name="dzEmail" type="email" class="form-control" required
+													placeholder="Your Email Address">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input name="dzOther[Phone]" type="text" required class="form-control"
+													placeholder="Phone">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6">
+										<div class="form-group">
+											<div class="input-group">
+												<input name="dzOther[Subject]" type="text" required class="form-control"
+													placeholder="Subject">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="form-group">
+											<div class="input-group">
+												<textarea name="dzMessage" rows="4" class="form-control" required
+													placeholder="Your Message..."></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12">
+										<div class="form-group">
+											<div class="input-group">
+												<div class="g-recaptcha" data-sitekey="<!-- Put reCaptcha Site Key -->"
+													data-callback="verifyRecaptchaCallback"
+													data-expired-callback="expiredRecaptchaCallback"></div>
+												<input class="form-control d-none" style="display:none;"
+													data-recaptcha="true" required
+													data-error="Please complete the Captcha">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+										<button name="submit" type="submit" value="Submit"
+											class="site-button outline outline-2 radius-xl button-md">
+											<span>Submit</span> </button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Content us END -->
+	</div>
+</div>
+<!-- Content END-->
+<!-- Footer -->
+{% endblock content %}
