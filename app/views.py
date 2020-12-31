@@ -81,7 +81,7 @@ class Contact(TemplateView):
 
 
 
-# def get_program_data(request):        ``
+# def get_program_data(request):        
 #     qs_val = list(FacultyData.objects.values())
 #     return JsonResponse({"data": qs_val})
 
